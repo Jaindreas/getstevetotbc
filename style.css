@@ -1,0 +1,14 @@
+
+h2 {
+    text-decoration: underline;
+}
+
+#data {
+    color: rgb(0, 104, 104);
+    font-weight: bold;
+}
+ 
+#recordCount {
+    color: black;
+}
+  
