@@ -1,5 +1,5 @@
 function fetchPage1() {
-    return fetch('https://www.strava.com/api/v3/clubs/817965/activities?page=1&per_page=200&access_token=f733fff0554468ec1b3dc330713cedd9ba85b82b')
+    return fetch('https://www.strava.com/api/v3/clubs/${clubID}/activities?page=1&per_page=200&access_token=${token}')
         .then(response => response.json())
         .then((json) => {
             let count = 0
@@ -12,7 +12,7 @@ function fetchPage1() {
 }
 
 function fetchPage2() {
-    return fetch('https://www.strava.com/api/v3/clubs/817965/activities?page=2&per_page=200&access_token=f733fff0554468ec1b3dc330713cedd9ba85b82b')
+    return fetch('https://www.strava.com/api/v3/clubs/${clubID}/activities?page=2&per_page=200&access_token=${token}')
         .then(response => response.json())
         .then((json) => {
             let count = 0
